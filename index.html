@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio | Horey视觉作品集 26.9</title>
+<meta name="description" content="Horey 视觉作品集 26.9 — 视觉创意项目作品 & AI 视觉创意作品。Created and Designed by Horey.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23111111'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3EH%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Inter+Tight:wght@400;600;700&family=Inter:wght@400;500&display=swap">
+<style>
+:root{
+  --black:#111111; --grey:#8A8A8A; --lgrey:#D9D9D9; --line:#E5E5E5; --white:#fff;
+  --pad-x:clamp(28px,8.3vw,120px);
+  --row-gap:clamp(28px,4vw,48px);
+  --sec-py:clamp(80px,10vw,140px);
+  --sans:'Inter','PingFang SC','Hiragino Sans GB','Microsoft YaHei',system-ui,sans-serif;
+  --display:'Inter Tight','Inter','PingFang SC','Hiragino Sans GB',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--white);color:var(--black);font-family:var(--sans);-webkit-font-smoothing:antialiased;line-height:1.5}
+img{display:block;width:100%;height:auto;background:#f6f6f6;-webkit-user-drag:none;user-drag:none;user-select:none;-webkit-user-select:none}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:920px;margin:0 auto;padding:0 var(--pad-x)}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:80px;gap:24px;max-width:none}
+.brand{font-family:var(--display);font-weight:700;font-size:18px;letter-spacing:2px}
+.navlinks{display:flex;gap:40px;font-size:13px;font-weight:500;letter-spacing:1.5px}
+.navlinks a{opacity:.75;transition:opacity .2s}
+.navlinks a:hover{opacity:1}
+
+/* ---------- hero ---------- */
+.hero{padding-top:clamp(72px,9vw,120px);padding-bottom:clamp(80px,10vw,130px);padding-left:0;padding-right:0}
+.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(64px,13vw,150px);line-height:.92;letter-spacing:-2px}
+.hero-sub{margin-top:36px;font-size:clamp(18px,2vw,22px);font-weight:500}
+.hero-en{margin-top:14px;font-size:12px;color:var(--grey);letter-spacing:3px}
+
+/* ---------- gallery ---------- */
+.sec{border-top:1px solid var(--line);padding-top:var(--sec-py);padding-bottom:var(--sec-py);padding-left:0;padding-right:0}
+.sec-hd{display:flex;align-items:baseline;gap:24px;flex-wrap:wrap;margin-bottom:clamp(48px,6vw,72px)}
+.sec-idx{font-family:var(--display);font-weight:700;font-size:18px;color:var(--grey)}
+.sec-en{font-family:var(--display);font-weight:700;font-size:clamp(28px,4vw,40px);letter-spacing:1px}
+.sec-cn{font-size:16px;color:var(--grey)}
+.rows{display:flex;flex-direction:column;gap:var(--row-gap)}
+.sub-hd{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin:10px 0 2px}
+.sub-hd .cn{font-family:var(--display);font-weight:700;font-size:clamp(17px,2vw,21px);letter-spacing:1px}
+.sub-hd .en{font-size:11px;color:var(--grey);letter-spacing:3px;text-transform:uppercase}
+.row{display:flex;gap:var(--row-gap);align-items:flex-start;flex-wrap:wrap}
+.row .it{min-width:0;cursor:zoom-in;position:relative}
+.row .it img{transition:opacity .25s}
+.row .it img:hover{opacity:.92}
+.r-full .it{flex:1 1 100%}
+.r-center{justify-content:center}
+.r-center .it{flex:0 0 460px;max-width:100%}
+.r-1-1 .it{flex:1 1 calc(50% - var(--row-gap)/2)}
+.r-3 .it{flex:1 1 calc(33.33% - var(--row-gap)*2/3)}
+.r-4 .it{flex:1 1 calc(25% - var(--row-gap)*3/4)}
+.cap{font-size:11px;color:var(--grey);letter-spacing:2px;display:flex;justify-content:space-between;gap:16px;margin-top:14px;text-transform:uppercase}
+.cap-r{text-align:right;justify-content:flex-end}
+
+/* ---------- about ---------- */
+.about{border-top:1px solid var(--line);padding-top:var(--sec-py);padding-bottom:var(--sec-py);padding-left:0;padding-right:0}
+.hello{font-family:var(--display);font-weight:700;font-size:clamp(56px,9vw,120px);line-height:1;color:var(--lgrey)}
+.about-grid{display:flex;gap:96px;margin-top:48px;flex-wrap:wrap}
+.about-l{width:420px;max-width:100%;display:flex;flex-direction:column;gap:18px}
+.about-t{font-family:var(--display);font-weight:700;font-size:22px}
+.about-l p{font-size:14px}
+.tags{font-size:13px;color:var(--grey)}
+.about-r{flex:1;min-width:280px;display:flex;flex-direction:column;gap:16px;align-items:flex-end;justify-content:flex-end}
+.body{font-size:16px;line-height:30px}
+.about-r p{font-size:16px;letter-spacing:.5px}
+.sig{font-size:12px;color:var(--grey);letter-spacing:2px}
+.foot{border-top:1px solid var(--line);padding:clamp(40px,5vw,64px) 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.foot p{font-size:12px;color:var(--grey);letter-spacing:2px}
+
+@media(max-width:899px){
+  :root{--row-gap:14px;--sec-py:56px;--pad-x:clamp(20px,5.5vw,28px)}
+  .hero,.about,.sec,.foot{padding-left:var(--pad-x);padding-right:var(--pad-x)}
+  .row{margin-left:calc(-1*var(--pad-x));margin-right:calc(-1*var(--pad-x))}
+  .r-3 .it,.r-4 .it{flex:1 1 calc(50% - var(--row-gap)/2)}
+  .hero h1{font-size:clamp(48px,16vw,80px)}
+  .navlinks{gap:20px}
+  .about-r{align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <div class="brand">HOREY</div>
+    <div class="navlinks">
+      <a href="#works">WORKS / 作品</a>
+      <a href="#about">ABOUT / 关于</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero wrap">
+  <h1>HOREY</h1>
+  <div class="hero-sub">视觉作品集 · Visual Portfolio</div>
+  <div class="hero-en">VISUAL CREATIVE PROJECTS & AI CREATIVE WORKS — 2026.09</div>
+</header>
+
+<!-- ===================== 01 视觉创意项目作品 ===================== -->
+<section class="sec wrap" id="works">
+  <div class="sec-hd">
+    <span class="sec-idx">01</span>
+    <span class="sec-en">VISUAL CREATIVE PROJECTS</span>
+    <span class="sec-cn">视觉创意项目作品</span>
+  </div>
+  <div class="rows">
+
+    <div class="sub-hd"><span class="cn">项目一 · 品牌视觉</span><span class="en">No.01</span></div>
+    <div class="row r-full">
+      <div class="it"><img src="assets/img/p-1-1.jpg" alt="视觉项目 01" loading="eager"></div>
+    </div>
+
+    <div class="sub-hd"><span class="cn">项目二 · 品牌视觉</span><span class="en">No.02</span></div>
+    <div class="row r-center">
+      <div class="it"><img src="assets/img/p-2-1.jpg" alt="视觉项目 02" loading="eager"></div>
+    </div>
+
+    <div class="sub-hd"><span class="cn">项目五 · 系列拍摄</span><span class="en">No.05</span></div>
+    <div class="row r-1-1">
+      <div class="it"><img src="assets/img/p-5-1.jpg" alt="视觉项目 05-1" loading="eager"></div>
+      <div class="it"><img src="assets/img/p-5-2.jpg" alt="视觉项目 05-2" loading="eager"></div>
+    </div>
+
+    <div class="sub-hd"><span class="cn">项目六 · 系列拍摄</span><span class="en">No.06</span></div>
+    <div class="row r-3">
+      <div class="it"><img src="assets/img/p-6-1.jpg" alt="视觉项目 06-1" loading="eager"></div>
+      <div class="it"><img src="assets/img/p-6-2.jpg" alt="视觉项目 06-2" loading="eager"></div>
+      <div class="it"><img src="assets/img/p-6-3.jpg" alt="视觉项目 06-3" loading="eager"></div>
+    </div>
+
+    <div class="sub-hd"><span class="cn">项目七 · 系列拍摄</span><span class="en">No.07</span></div>
+    <div class="row r-3">
+      <div class="it"><img src="assets/img/p-7-1.jpg" alt="视觉项目 07-1" loading="eager"></div>
+      <div class="it"><img src="assets/img/p-7-2.jpg" alt="视觉项目 07-2" loading="eager"></div>
+      <div class="it"><img src="assets/img/p-7-3.jpg" alt="视觉项目 07-3" loading="eager"></div>
+    </div>
+
+    <div class="sub-hd"><span class="cn">项目八 · 系列拍摄</span><span class="en">No.08</span></div>
+    <div class="row r-3">
+      <div class="it"><img src="assets/img/p-8-1.jpg" alt="视觉项目 08-1" loading="eager"></div>
+      <div class="it"><img src="assets/img/p-8-2.jpg" alt="视觉项目 08-2" loading="eager"></div>
+      <div class="it"><img src="assets/img/p-8-3.jpg" alt="视觉项目 08-3" loading="eager"></div>
+    </div>
+
+    <div class="sub-hd"><span class="cn">项目九 · 系列拍摄</span><span class="en">No.09</span></div>
+    <div class="row r-1-1">
+      <div class="it"><img src="assets/img/p-9-1.jpg" alt="视觉项目 09-1" loading="eager"></div>
+      <div class="it"><img src="assets/img/p-9-2.jpg" alt="视觉项目 09-2" loading="eager"></div>
+    </div>
+
+    <div class="sub-hd"><span class="cn">项目十 · 系列拍摄</span><span class="en">No.10</span></div>
+    <div class="row r-3">
+      <div class="it"><img src="assets/img/p-10-1.jpg" alt="视觉项目 10-1" loading="eager"></div>
+      <div class="it"><img src="assets/img/p-10-2.jpg" alt="视觉项目 10-2" loading="eager"></div>
+      <div class="it"><img src="assets/img/p-10-3.jpg" alt="视觉项目 10-3" loading="eager"></div>
+    </div>
+
+    <!-- ===================== 02 AI视觉创意作品 ===================== -->
+  </div>
+</section>
+
+<section class="sec wrap">
+  <div class="sec-hd">
+    <span class="sec-idx">02</span>
+    <span class="sec-en">AI CREATIVE WORKS</span>
+    <span class="sec-cn">AI视觉创意作品</span>
+  </div>
+  <div class="rows">
+
+    <div class="sub-hd"><span class="cn">No.01</span><span class="en">AI Creative</span></div>
+    <div class="row r-1-1">
+      <div class="it"><img src="assets/img/a-1.jpg" alt="AI 创意 01" loading="eager"></div>
+      <div class="it"><img src="assets/img/a-1-1.jpg" alt="AI 创意 01-1" loading="eager"></div>
+    </div>
+
+    <div class="sub-hd"><span class="cn">No.02</span><span class="en">AI Creative</span></div>
+    <div class="row r-1-1">
+      <div class="it"><img src="assets/img/a-2.jpg" alt="AI 创意 02" loading="eager"></div>
+      <div class="it"><img src="assets/img/a-2-new.jpg" alt="AI 创意 02-new" loading="eager"></div>
+    </div>
+
+    <div class="sub-hd"><span class="cn">No.03</span><span class="en">AI Creative</span></div>
+    <div class="row r-full">
+      <div class="it"><img src="assets/img/a-3.jpg" alt="AI 创意 03" loading="eager"></div>
+    </div>
+
+    <div class="sub-hd"><span class="cn">No.04</span><span class="en">AI Creative</span></div>
+    <div class="row r-3">
+      <div class="it"><img src="assets/img/a-4-1.jpg" alt="AI 创意 04-1" loading="eager"></div>
+      <div class="it"><img src="assets/img/a-4-2.jpg" alt="AI 创意 04-2" loading="eager"></div>
+      <div class="it"><img src="assets/img/a-4-3.jpg" alt="AI 创意 04-3" loading="eager"></div>
+    </div>
+
+    <div class="sub-hd"><span class="cn">No.05</span><span class="en">AI Creative</span></div>
+    <div class="row r-full">
+      <div class="it"><img src="assets/img/a-5.jpg" alt="AI 创意 05" loading="eager"></div>
+    </div>
+
+    <div class="sub-hd"><span class="cn">No.06</span><span class="en">AI Creative</span></div>
+    <div class="row r-4">
+      <div class="it"><img src="assets/img/a-6-1.jpg" alt="AI 创意 06-1" loading="eager"></div>
+      <div class="it"><img src="assets/img/a-6-2.jpg" alt="AI 创意 06-2" loading="eager"></div>
+      <div class="it"><img src="assets/img/a-6-3.jpg" alt="AI 创意 06-3" loading="eager"></div>
+      <div class="it"><img src="assets/img/a-6-4.jpg" alt="AI 创意 06-4" loading="eager"></div>
+    </div>
+
+    <div class="sub-hd"><span class="cn">No.07</span><span class="en">AI Creative</span></div>
+    <div class="row r-1-1">
+      <div class="it"><img src="assets/img/a-7-1.jpg" alt="AI 创意 07-1" loading="eager"></div>
+      <div class="it"><img src="assets/img/a-7-2.jpg" alt="AI 创意 07-2" loading="eager"></div>
+    </div>
+
+    <div class="sub-hd"><span class="cn">No.08</span><span class="en">AI Creative</span></div>
+    <div class="row r-4">
+      <div class="it"><img src="assets/img/a-8-1.jpg" alt="AI 创意 08-1" loading="eager"></div>
+      <div class="it"><img src="assets/img/a-8-2.jpg" alt="AI 创意 08-2" loading="eager"></div>
+      <div class="it"><img src="assets/img/a-8-3.jpg" alt="AI 创意 08-3" loading="eager"></div>
+      <div class="it"><img src="assets/img/a-8-4.jpg" alt="AI 创意 08-4" loading="eager"></div>
+    </div>
+
+    <div class="sub-hd"><span class="cn">No.09</span><span class="en">AI Creative</span></div>
+    <div class="row r-3">
+      <div class="it"><img src="assets/img/a-9-1.jpg" alt="AI 创意 09-1" loading="eager"></div>
+      <div class="it"><img src="assets/img/a-9-2.jpg" alt="AI 创意 09-2" loading="eager"></div>
+      <div class="it"><img src="assets/img/a-9-3.jpg" alt="AI 创意 09-3" loading="eager"></div>
+    </div>
+
+    <div class="sub-hd"><span class="cn">No.10</span><span class="en">AI Creative</span></div>
+    <div class="row r-1-1">
+      <div class="it"><img src="assets/img/a-10-1.jpg" alt="AI 创意 10-1" loading="eager"></div>
+      <div class="it"><img src="assets/img/a-10-2.jpg" alt="AI 创意 10-2" loading="eager"></div>
+    </div>
+
+    <div class="sub-hd"><span class="cn">No.11</span><span class="en">AI Creative</span></div>
+    <div class="row r-1-1">
+      <div class="it"><img src="assets/img/a-11-1.jpg" alt="AI 创意 11-1" loading="eager"></div>
+      <div class="it"><img src="assets/img/a-11-2.jpg" alt="AI 创意 11-2" loading="eager"></div>
+    </div>
+
+    <div class="sub-hd"><span class="cn">No.12</span><span class="en">AI Creative</span></div>
+    <div class="row r-1-1">
+      <div class="it"><img src="assets/img/a-12-1.jpg" alt="AI 创意 12-1" loading="eager"></div>
+      <div class="it"><img src="assets/img/a-12-2.jpg" alt="AI 创意 12-2" loading="eager"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== about ===================== -->
+<section class="about wrap" id="about">
+  <div class="hello">HELLO</div>
+  <div class="about-grid">
+    <div class="about-l">
+      <div class="about-t">About Me / 关于我</div>
+      <p>Name — 侯续吉 / Horey</p>
+      <div class="tags">视觉项目管理 ｜ 项目优化迭代 ｜ AI 项目管理 ｜ 内外部对接</div>
+      <p class="body">6年视觉类项目统筹管理经验，3年AI项目优化与落地应用经验。具备从创意策划、效果把控到稳定交付全流程执行与管理经验。擅长视觉项目优化迭代与搭建视觉规范体系，具备 Owner 意识与 PMP 项目管理思维，拥有丰富的技术团队管理与供应商统筹管理经验。</p>
+    </div>
+    <div class="about-r">
+      <p>Number — 18846830917</p>
+      <p>E-mail — houxuji@icloud.com</p>
+    </div>
+  </div>
+</section>
+
+<footer class="foot wrap">
+  <p>© 2026 HOREY</p>
+  <p>CREATED & DESIGNED BY HOREY</p>
+</footer>
+
+<script>
+document.addEventListener('contextmenu',e=>e.preventDefault());
+document.addEventListener('dragstart',e=>e.preventDefault());
+document.addEventListener('selectstart',e=>{if(e.target.tagName==='IMG')e.preventDefault()});
+</script>
+</body>
+</html>
